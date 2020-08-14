@@ -1,0 +1,48 @@
+# aim of the experiment
+to find the values in iterative_linear_search
+# biref descrption of linear search
+• Sequential search is used whenever the list is not ordered.
+• Generally we use the technique only for small lists or lists that are
+not
+ searched often.
+• In the sequential search , we start searching for the target from the
+ beginning of the list, and we continue until the we find the target or
+ until we are sure that it is not in the list.
+• This gives us two possibilities:
+either we find it or
+we reach the end of the list
+
+# step by step procedure explaining each output
+
+# inculde<stdio.h.
+int iterative_linear_search(int arr[], int key ,int n)
+{
+  int i;
+  for (i = 0 ; i<n; i++)
+   {
+        if(arr[i] == key)
+        {
+           return i;
+        }
+   }
+   return -1;
+}
+int main (void)
+{
+  int arr[] = {10 , 6 ,8 ,15, 20 ,3 14 ,99 ,66,30} ;
+  int n = 10;
+  printf ("the array elemnts are : {10 ,6,8 ,15 ,20,3,14,99,66,30}\n"}
+  int key;
+  printf("enter the key value\n");
+  scanf("%d" , &key);
+  int pos = iterative_linear_search(arr,key,n);
+  if (pos ! = -1)
+   {
+       printf("key found at %d\n",pos);
+   }
+   else 
+   {
+        printf("key is not present\n");
+    }
+  return 0;
+ }
