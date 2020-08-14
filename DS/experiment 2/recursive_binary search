@@ -22,5 +22,36 @@ one to identify the beginning of the list(mid)
 one to identify the beginning of the list(last)
 mid=( first + last )/2
 1 
-# step by step procedure
+# step by step procedure  explaining each ouput 
 
+# include<stdio.h>
+int recursive_binary_search(int arr[] , int low, int high , int key)
+{
+  if(low > high)
+  {
+      return -1 ;
+  }
+  int mid = (low + high) /2 ;
+  if(arr[mid] == key )
+  {
+      return mid ;
+  }
+   else if ( key < arr[mid])
+   {
+       recursive_binary_search(arr , low, mid-1, key);
+   }
+   else
+   {
+        recursive_binary_search(arr , mid+1 , high , key);
+    }
+  int main()
+  {
+     int arr[] = {3,6,8,10,14,15,20,30,66,99};
+     printf("the element in array are = {3,6,8,10,14,15,20,30,66,99}\n");
+     int element ;
+     printf("enter the element to be found\n");
+     scanf("%d" , &element);
+     printf("element found at %d \n" , recursive_binary_search(arr,0,9,element));
+     return 0;
+   }
+     
