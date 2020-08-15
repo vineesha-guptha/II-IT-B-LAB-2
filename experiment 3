@@ -29,3 +29,6 @@ count = subsetSum(arr, n, i + 1, sum, count);
 Return Statement: At every step, the count of subsets by either including a particular element or not including a particular element is returned. Finally, when the entire recursion stack is executed, the total count is returned.
 From the above approach, it can be clearly analyzed that if there are N elements in the array, then a total of 2N cases arise. Every element is checked for the above cases using recursion.
 
+
+output obtained:
+![output](out66(2).png) (out0(2).png)
