@@ -14,38 +14,17 @@ we reach the end of the list
 
 # step by step procedure explaining each output
 
-# inculde<stdio.h.
-int iterative_linear_search(int arr[], int key ,int n)
-{
-  int i;
-  for (i = 0 ; i<n; i++)
-   {
-        if(arr[i] == key)
-        {
-           return i;
-        }
-   }
-   return -1;
-}
-int main (void)
-{
-  int arr[] = {10 , 6 ,8 ,15, 20 ,3 14 ,99 ,66,30} ;
-  int n = 10;
-  printf ("the array elemnts are : {10 ,6,8 ,15 ,20,3,14,99,66,30}\n"}
-  int key;
-  printf("enter the key value\n");
-  scanf("%d" , &key);
-  int pos = iterative_linear_search(arr,key,n);
-  if (pos ! = -1)
-   {
-       printf("key found at %d\n",pos);
-   }
-   else 
-   {
-        printf("key is not present\n");
-    }
-  return 0 ;
- }
- 
- 
- ![output](2020-8-14(11).png) (2020-8-14(12).png)
+=> we have  the array elements[10,6,8,15,20,3,14,99,66,30]
+=> for the output 1 the key element we need to search is 66
+=> in tne iterative process we check if the element and the key value are same
+=> in iteration 1 a[0] = 10 key is not equal to 66,so the case fails
+=> in iteration 2 a[1] =  6 key is not equal to 66,so the case fails
+=> in iteration 3 a[2] =  8 key is not equal to 66,so the case fails
+=> similarly iteration continues until the element and key value are same
+=> in iteration 9 a[8] =  66 is equal to 66 so case passed
+=>  in the function the iteration takes place and the element with index printed to the output
+=>  if all the iteration cases falis the it returns element not found to the output,
+
+
+output obtained:
+![output](2020-8-14(11).png) (2020-8-14(12).png)
