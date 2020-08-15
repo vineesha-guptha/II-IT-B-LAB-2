@@ -23,36 +23,18 @@ one to identify the beginning of the list(last)
 mid=( first + last )/2
 1 
 # step by step procedure  explaining each ouput 
+=> first we have to sort the array, after sorting we have array
+=> array= [3,6,8,10,14,15,20,30,66,99]
+=> for output 1 the keyvalue we need to search is 6
+=> for output 2 the keyvalue we need to search is 14
+=> for output 3 the keyvalue we need to search is 99
+=> by using loops and conditions we can obtain the output
+=> first we find the mid value ,ie; mid= low+high/2
+=> if keyvalue is less then mid value ,we use mid-1
+=> if keyvalue is greater then mid value ,we use mid+1
+=> at last in output we enter the element it to be found it gives its index or array value
+=>  if the element is not in the list of the array its gives notfound or error
 
-# include<stdio.h>
-int recursive_binary_search(int arr[] , int low, int high , int key)
-{
-  if(low > high)
-  {
-      return -1 ;
-  }
-  int mid = (low + high) /2 ;
-  if(arr[mid] == key )
-  {
-      return mid ;
-  }
-   else if ( key < arr[mid])
-   {
-       recursive_binary_search(arr , low, mid-1, key);
-   }
-   else
-   {
-        recursive_binary_search(arr , mid+1 , high , key);
-    }
-  int main()
-  {
-     int arr[] = {3,6,8,10,14,15,20,30,66,99};
-     printf("the element in array are = {3,6,8,10,14,15,20,30,66,99}\n");
-     int element ;
-     printf("enter the element to be found\n");
-     scanf("%d" , &element);
-     printf("element found at %d \n" , recursive_binary_search(arr,0,9,element));
-     return 0;
-   }
+output obtained:
      
 ![output](2020-8-14(4).png) (2020-8-14(5).png) (2020-8-14(6).png)
