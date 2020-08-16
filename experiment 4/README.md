@@ -30,5 +30,5 @@ Else If x is greater than the mid element, then x can only lie in right half sub
 Else (x is smaller) recur for the left half.
 
 # output obtained
-![output](2020-8-15(2).png)
+
 
