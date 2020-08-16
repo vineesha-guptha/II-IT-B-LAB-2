@@ -31,4 +31,4 @@ Else (x is smaller) recur for the left half.
 
 # output obtained
 
-
+![output](2020-8-16.png) (2020-8-16(1).png) (2020-8-16(2).png)
