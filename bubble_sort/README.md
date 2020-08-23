@@ -44,5 +44,5 @@ Here the array elements 84,34,27  as the program first it checks if it is sorted
 Every element with its adjacent element and swaps at last it prints
 27,34,84
 # output obtained:
-!(output)(bubble 1.png)(bubble 2.png)(bubble 3.png)
+![output](bubble 1.png)(bubble 2.png)(bubble 3.png)
 
